@@ -156,6 +156,16 @@ class ViewController: UIViewController {
         
 
         
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if PFUser.currentUser() != nil {
+            
+            performSegueWithIdentifier("loggedIn", sender: self)
+            
+        }
         
     }
 

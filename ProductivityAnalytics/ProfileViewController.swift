@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import Parse
+
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameLabel.text = PFUser.currentUser()?.username
 
     }
 
@@ -23,7 +30,12 @@ class ProfileViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if segue.identifier == "loggedOut"{
+            
+            PFUser.logOut()
         
+        
+        }
         
         
     }
