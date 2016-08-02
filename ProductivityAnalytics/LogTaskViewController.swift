@@ -46,7 +46,7 @@ class LogTaskViewController: UIViewController {
         task["taskName"] = taskNameField.text
         task["date"] = datePicker.date
         task["lengthOfTime"] = stepper.value
-        task["completed"] = true 
+        task["completed"] = false
         
         activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
         activityIndicator.center = self.view.center

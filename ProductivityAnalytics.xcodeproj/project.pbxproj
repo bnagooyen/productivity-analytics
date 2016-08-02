@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		442D77401D4AC83E005754C8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442D773F1D4AC83E005754C8 /* ProfileViewController.swift */; };
+		4450EC011D4E803E0019E488 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450EC001D4E803E0019E488 /* TaskDetailViewController.swift */; };
 		44F1D38F1D4A9A9E003F7A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1D38E1D4A9A9E003F7A0F /* AppDelegate.swift */; };
 		44F1D3911D4A9A9E003F7A0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1D3901D4A9A9E003F7A0F /* ViewController.swift */; };
 		44F1D3941D4A9A9E003F7A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F1D3921D4A9A9E003F7A0F /* Main.storyboard */; };
@@ -15,12 +16,15 @@
 		44F1D3991D4A9A9E003F7A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F1D3981D4A9A9E003F7A0F /* Assets.xcassets */; };
 		44F1D39C1D4A9A9E003F7A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F1D39A1D4A9A9E003F7A0F /* LaunchScreen.storyboard */; };
 		44F68ABB1D4BEA7B001B8474 /* LogTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F68ABA1D4BEA7B001B8474 /* LogTaskViewController.swift */; };
+		44F68ABD1D4C81C1001B8474 /* CurrentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F68ABC1D4C81C1001B8474 /* CurrentTableViewController.swift */; };
+		44F68ABF1D4C81E8001B8474 /* LifeTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F68ABE1D4C81E8001B8474 /* LifeTimeTableViewController.swift */; };
 		6A8190CACBCC3B7737EBEA4C /* Pods_ProductivityAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A907E82388BC898B0B116B /* Pods_ProductivityAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33EE3CAC04A90C815D25D63D /* Pods-ProductivityAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductivityAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProductivityAnalytics/Pods-ProductivityAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		442D773F1D4AC83E005754C8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4450EC001D4E803E0019E488 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		44F1D38B1D4A9A9E003F7A0F /* ProductivityAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductivityAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F1D38E1D4A9A9E003F7A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F1D3901D4A9A9E003F7A0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		44F1D39B1D4A9A9E003F7A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44F1D39D1D4A9A9E003F7A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F68ABA1D4BEA7B001B8474 /* LogTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTaskViewController.swift; sourceTree = "<group>"; };
+		44F68ABC1D4C81C1001B8474 /* CurrentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTableViewController.swift; sourceTree = "<group>"; };
+		44F68ABE1D4C81E8001B8474 /* LifeTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeTimeTableViewController.swift; sourceTree = "<group>"; };
 		6E3C3C6E1367616D170FFF4F /* Pods-ProductivityAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductivityAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProductivityAnalytics/Pods-ProductivityAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		A4A907E82388BC898B0B116B /* Pods_ProductivityAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductivityAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +76,9 @@
 				44F1D38E1D4A9A9E003F7A0F /* AppDelegate.swift */,
 				44F1D3901D4A9A9E003F7A0F /* ViewController.swift */,
 				44F1D3921D4A9A9E003F7A0F /* Main.storyboard */,
+				4450EC001D4E803E0019E488 /* TaskDetailViewController.swift */,
+				44F68ABE1D4C81E8001B8474 /* LifeTimeTableViewController.swift */,
+				44F68ABC1D4C81C1001B8474 /* CurrentTableViewController.swift */,
 				44F68ABA1D4BEA7B001B8474 /* LogTaskViewController.swift */,
 				442D773F1D4AC83E005754C8 /* ProfileViewController.swift */,
 				44F1D3981D4A9A9E003F7A0F /* Assets.xcassets */,
@@ -221,8 +230,11 @@
 			files = (
 				44F1D3971D4A9A9E003F7A0F /* ProductivityAnalytics.xcdatamodeld in Sources */,
 				44F68ABB1D4BEA7B001B8474 /* LogTaskViewController.swift in Sources */,
+				44F68ABD1D4C81C1001B8474 /* CurrentTableViewController.swift in Sources */,
+				44F68ABF1D4C81E8001B8474 /* LifeTimeTableViewController.swift in Sources */,
 				44F1D3911D4A9A9E003F7A0F /* ViewController.swift in Sources */,
 				442D77401D4AC83E005754C8 /* ProfileViewController.swift in Sources */,
+				4450EC011D4E803E0019E488 /* TaskDetailViewController.swift in Sources */,
 				44F1D38F1D4A9A9E003F7A0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
