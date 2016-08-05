@@ -102,7 +102,11 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" identifier="loggedOut" id="dBr-Ji-ndn"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Analytics" id="GYP-L0-1XS"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Analytics" id="GYP-L0-1XS">
+                                            <connections>
+                                                <segue destination="T7F-iV-U7E" kind="show" id="dMG-x3-EnY"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -204,12 +208,106 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="completionRateValue" destination="GNb-pN-8Gr" id="sCN-WU-LNG"/>
+                        <outlet property="dailyTaskValue" destination="ggM-Sl-sjM" id="Qkv-6B-YkP"/>
+                        <outlet property="productivityPointsValue" destination="jlw-HL-K8G" id="FfP-0b-TNY"/>
                         <outlet property="usernameLabel" destination="yP5-jV-DwM" id="qjx-r4-rEB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sv-uO-ofi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590.5" y="218.5"/>
+            <point key="canvasLocation" x="518.5" y="228.5"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="JRZ-RZ-Zdz">
+            <objects>
+                <viewController id="9kB-du-zPg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cC2-mg-2YF"/>
+                        <viewControllerLayoutGuide type="bottom" id="uD4-ei-Taa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2u-Ut-Ia8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Yua-pf-aGx"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klT-cj-wPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810.5" y="615.5"/>
+        </scene>
+        <!--Pie Chart-->
+        <scene sceneID="kbS-7a-8mj">
+            <objects>
+                <viewController id="qtT-5v-bOv" customClass="PieGraphViewController" customModule="ProductivityAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vg4-iO-yWd"/>
+                        <viewControllerLayoutGuide type="bottom" id="dUR-oG-U9F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aGa-BG-WD2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YXy-6g-ZKa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Pie" id="3Fh-jw-2Bf">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="pdo-xm-OU0">
+                                            <connections>
+                                                <segue destination="vPs-1l-kzJ" kind="show" id="TJT-Sr-0vg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAX-iB-dXp" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="27" y="105" width="320" height="458"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="458" id="fwA-7r-OoI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bAX-iB-dXp" secondAttribute="trailing" constant="8" id="BIX-OZ-Wqj"/>
+                            <constraint firstItem="bAX-iB-dXp" firstAttribute="top" secondItem="YXy-6g-ZKa" secondAttribute="bottom" constant="61" id="H8k-CQ-SMd"/>
+                            <constraint firstItem="dUR-oG-U9F" firstAttribute="top" secondItem="bAX-iB-dXp" secondAttribute="bottom" constant="104" id="ahl-aQ-cF1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YXy-6g-ZKa" secondAttribute="trailing" constant="-20" id="kkP-Yy-sW6"/>
+                            <constraint firstItem="bAX-iB-dXp" firstAttribute="leading" secondItem="aGa-BG-WD2" secondAttribute="leadingMargin" constant="7" id="sXx-Yt-wPO"/>
+                            <constraint firstItem="YXy-6g-ZKa" firstAttribute="leading" secondItem="aGa-BG-WD2" secondAttribute="leadingMargin" constant="-20" id="zv8-CR-g9i"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pie Chart" id="q3o-mk-cp0"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pieChart" destination="bAX-iB-dXp" id="g5s-Wg-Thn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HbZ-Wx-b22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909.5" y="-53.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jyb-XS-okg">
+            <objects>
+                <tabBarController id="T7F-iV-U7E" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="H4F-Fp-JbW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qtT-5v-bOv" kind="relationship" relationship="viewControllers" id="gx2-hS-n51"/>
+                        <segue destination="9kB-du-zPg" kind="relationship" relationship="viewControllers" id="DsV-va-Eha"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAF-UE-AI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.5" y="228.5"/>
         </scene>
         <!--Log Task View Controller-->
         <scene sceneID="JRC-z5-AYu">
@@ -556,9 +654,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="TJT-Sr-0vg"/>
+        <segue reference="hoD-Ub-oJI"/>
         <segue reference="iwX-Dl-3LK"/>
         <segue reference="KqR-WW-Mqh"/>
-        <segue reference="WUD-kV-azM"/>
-        <segue reference="Ka0-Lm-E8W"/>
     </inferredMetricsTieBreakers>
 </document>

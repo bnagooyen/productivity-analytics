@@ -9,4 +9,5 @@ target 'ProductivityAnalytics' do
 
 pod 'Parse'
 pod 'Alamofire', '3.4.1'
+pod ‘Charts’ 
 end

@@ -1,18 +1,23 @@
 PODS:
   - Alamofire (3.4.1)
   - Bolts/Tasks (1.8.4)
+  - Charts (2.2.5):
+    - Charts/Core (= 2.2.5)
+  - Charts/Core (2.2.5)
   - Parse (1.14.2):
     - Bolts/Tasks (~> 1.8)
 
 DEPENDENCIES:
   - Alamofire (= 3.4.1)
+  - Charts
   - Parse
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
 
-PODFILE CHECKSUM: 347e3ca078cddb6090d4bc514ee8900bb93ca276
+PODFILE CHECKSUM: 3ebe6e6e19dfffaeb635fce59b794aaf3714c72b
 
 COCOAPODS: 1.0.1

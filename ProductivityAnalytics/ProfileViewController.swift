@@ -13,9 +13,12 @@ import Parse
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var usernameLabel: UILabel!
-    
+    @IBOutlet weak var productivityPointsValue: UILabel!
+    @IBOutlet weak var completionRateValue: UILabel!
+    @IBOutlet weak var dailyTaskValue: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         usernameLabel.text = PFUser.currentUser()?.username
