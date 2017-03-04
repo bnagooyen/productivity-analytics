@@ -61,7 +61,7 @@ class TaskDetailViewController: UIViewController {
                             
                             object["completed"] = true
                             object.saveInBackground()
-                            print("gets here")
+                           
                             
                         }
                         
@@ -78,7 +78,7 @@ class TaskDetailViewController: UIViewController {
         
         completionAlert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: {(action) in
             
-            print("nah")
+            
             
         }))
         
