@@ -3,5 +3,4 @@ This is a Swift Application that tracks the logging of activities and stores the
 
 This application was written in order to create a meaningful way of storing activities while providing data visualization.
 
-
-
+Charts iOS Pod was used and included in the podfile.  
